@@ -1,4 +1,4 @@
-\documentclass[pastel]{hipstercv}
+\documentclass[grey]{hipstercv}
 % available options are: darkhipster, lighthipster, pastel, allblack, grey, verylight
 \usepackage[utf8]{inputenc}
 \usepackage[default]{raleway}
@@ -28,7 +28,7 @@
 
 
 
-\header{\bg{headerfontbox}{headerfontboxfont}{DevOps Engineer} }{\bgupper{headerfontbox}{headerfontboxfont}{\bfseries\Huge Maxim Ritter von Onciul}}{\bg{headerfontbox}{headerfontboxfont}{\large Build and Run Enterprise Software}}{jack.jpg}{headerblue}{3.5cm}{2cm}
+\header{}{\bgupper{headerfontbox}{headerfontboxfont}{\bfseries\Huge Maxim Ritter von Onciul}}{}{profile.jpg}{headerblue}{3.5cm}{2cm}
 
 
 
@@ -55,22 +55,21 @@
 \bg{cvgreen}{white}{personal} \\
 
 \begin{tabular}{ll}
-\faMale & Maxim Ritter von Onciul \\
-\faGlobe & nationality: German  \\
-\faHeart & married \\
-\faChild & One son, born in June 2022 \\
+\faGlobe & German  \\
+\faHeart & Married \\
+\faBirthdayCake & April 16$^{\textrm{th}}$ 1995 \\
 \end{tabular}
 
 \bigskip
 
 \bg{cvgreen}{white}{Areas of specialization} \\
 
-Spring boot ~•~ Docker ~•~ Linux
+DevOps ~•~ Backend ~•~ Test
 
 \bigskip
 
 \bgupper{cvgreen}{white}{Skills} \\
-\bg{cvgreen}{white}{Languages}
+\bg{cvgreen}{white}{\large{Languages}}
 \bigskip
 
 
@@ -83,51 +82,82 @@ Spring boot ~•~ Docker ~•~ Linux
 
 \bigskip
 
-\bg{cvgreen}{white}{Interests}\\
+\bg{cvgreen}{white}{\large{Technologies}} \\
 
-\bubblediagram{{DevOps},  REST, Web3, JPA, Spring, Docker, CLI, FP, Crytpo, ML}
+\begin{minipage}[t]{0.27\textwidth}
 
-\hspace{3cm} \color{labelcolour}{OS:} \hspace{0.5em} \icon{\faLinux}{labelcolour}{\Large}
-\bigskip
+\bg{cvgreen}{white}{Backend} \\
 
-\bg{cvgreen}{white}{IT \& programming} \\
+\cvtag{Java}
+\cvtag{Kotlin}
+\cvtag{Java Persistence API}
+\cvtag{Hibernate}
+\cvtag{Relational Databases}
+\cvtag{Liquibase}
+\cvtag{REST}
+\cvtag{Testcontainers}
+\cvtag{Spring Boot}
+\cvtag{JUnit 5}
+\cvtag{Mockito}
+\cvtag{Web Services}
+\cvtag{Unit Testing}
+\cvtag{Integration Testing}
+\cvtag{Clean Code}
 
-\begin{minipage}[t]{0.3\textwidth}
-\cvtag{spring boot}
-\cvtag{java}
-\cvtag{python}
-\cvtag{angular}
-\cvtag{typescript}
-\cvtag{gcp}
-\cvtag{shell}
-\cvtag{lua}
-\cvtag{latex}
-\cvtag{html}
-\cvtag{css}
-\cvtag{haskell}
-\cvtag{kotlin}
-\cvtag{clojure}
+\vspace{1em}
+\bg{cvgreen}{white}{Frontend} \\
+
+\cvtag{Angular}
+\cvtag{Jasmine}
+\cvtag{Typescript}
+\cvtag{Html}
+\cvtag{CSS}
+\cvtag{Unit Testing}
+\cvtag{json}
+\cvtag{Three.js}
+\cvtag{d3.js}
+
+\vspace{1em}
+\bg{cvgreen}{white}{DevOps} \\
+
+\cvtag{Linux}
+\cvtag{Shell}
+\cvtag{Docker}
+\cvtag{Git}
+\cvtag{Gitlab CI}
+\cvtag{Ansible}
+\cvtag{Google Cloud Platform}
+\cvtag{Jenkins}
+\cvtag{Amazon Web Services}
+
+\vspace{1em}
+\bg{cvgreen}{white}{Misc} \\
+
+\cvtag{Python}
+\cvtag{Lua}
+\cvtag{Latex}
+\cvtag{Clojure}
 \cvtag{C/C++}
-\cvtag{ansible}
-\cvtag{docker}
-\cvtag{git}
-\cvtag{gitlab CI}
-\cvtag{matlab}
-\cvtag{prolog}
-\cvtag{flutter}
-\cvtag{aws}
-\cvtag{wordpress}
+\cvtag{Flutter}
+\cvtag{Dart}
+\cvtag{Rust}
+\cvtag{Go}
+\cvtag{Blockchain}
+\cvtag{tox}
+\cvtag{Crytpography}
+\cvtag{Haskell}
+\cvtag{Functional Programming}
+\cvtag{Tensorflow}
+\cvtag{Stable baselines3}
+\cvtag{Tensorboard}
+\cvtag{MuJoCo}
+\cvtag{Pybullet}
+\cvtag{Pytest}
+\cvtag{Yaml}
+\cvtag{Toml}
+\cvtag{IHP}
 
-
-%\dashrule{}{}
 \end{minipage}
-
-
-\bigskip
-
-\scalebox{0.8}{
-\iconcross{\Huge}{white}{cvred}{\color{black!30}\faBook}{\href{mailto:the.latex.ninja@gmail.com}{\faEnvelopeO}}{\faPhone}{\faCode}
-}
 
 \phantom{turn the page}
 
@@ -139,57 +169,65 @@ Spring boot ~•~ Docker ~•~ Linux
 \small
 \section*{Short Resumé}
 
-\begin{tabular}{r| p{0.4\textwidth} c}
-    \cvevent{2021--}{Junior Software Engineer}{isento GmbH}{Nuremberg \color{cvred}}{DevOps: Spring boot, Angular, Docker, gitlab CI, GCP}{isento.png} \\
-    \cvevent{2020--2021}{Working Student}{isento GmbH}{Nuremberg \color{cvred}}{Masters thesis: reinforcement learning using tensorflow and pybullet}{isento.png} \\
-    \cvevent{2018--2020}{Teaching Assistant}{FAU}{Erlangen \color{cvred}}{Systems Programming in C}{fau.jpg}
+\begin{tabular}{r| p{0.5\textwidth} c}
+    \cvevent{2021--today}{Junior Software Engineer}{isento GmbH}{Nuremberg \color{cvred}}{
+    Instantiate a low entry-barrier machine learning platform
+        \begin{itemize}
+            \item Agile software development team using \textbf{Kanban}
+            \item Help \textbf{Requirements Engineers}, \textbf{Testers} and \textbf{Product Owner} understand the subject
+            \item Find academic partners and write proposals for \textbf{public funds}
+            \item Tech: Spring boot, Angular, Docker, gitlab CI, Google Cloud Platform
+        \end{itemize}
+    }{isento.png} \\
+    \cvevent{2020--2021}{Working Student}{isento GmbH}{Nuremberg \color{cvred}}{
+        Masters thesis: reinforcement learning for a robotic task
+        \begin{itemize}
+            \item Adapt an existing reinforcement learning algorithm
+            \item Migrate proprietary physics engine to the free alternative Pybullet
+            \item Integrate said algorithm with a Web Application
+            \item Tech: Docker, Yaml, Tensorflow, Numpy and Pybullet
+        \end{itemize}
+    }{isento.png} \\
+    \cvevent{2018--2020}{Teaching Assistant}{FAU}{Erlangen \color{cvred}}{Systems Programming in C}{fau.jpg} \\
+    \cvevent{2016--2017}{Working Student}{Fraunhofer IIS}{Nuremberg \color{cvred}}{Microcontroller Programming in an IoT context}{iis.png}
 \end{tabular}
 
-\vspace{4em}
+\vspace{2em}
 
-\begin{minipage}[t]{0.4\textwidth}
 \section*{Degrees}
 \begin{tabular}{r p{0.6\textwidth} c}
-    \cvdegree{2021}{Computer Science}{M.Sc.}{FAU Erlangen \color{headerblue}}{}{fau.jpg} \\
-    \cvdegree{2017}{Information and Communications Technology}{B.Sc.}{FAU Erlangen \color{headerblue}}{}{fau.jpg}
+    \cvdegree{2021}{Computer Science}{M.Sc.}{FAU Erlangen \color{headerblue}}{Operating Systems, Distributed Systems, Real-time Systems, Crytpography, Machine Learning}{} \\
+    \cvdegree{2017}{Information and Communications Technology}{B.Sc.}{FAU Erlangen \color{headerblue}}{Information Theory, Digital Communications, Algorithms and Data Structures}{}
 \end{tabular}
-\end{minipage}\hfill
-\begin{minipage}[t]{0.16\textwidth}
-\section*{Hobbies}
-% usage \hobbyicon{<fontawesome icon}{Text}{background color of circle}{size of icon}{space text below icon}
-\begin{tabular}{cc}
-\hobbyicon{\color{iconcolour}\faRoad}{Run}{cvgreen}{\iconsize}{2em} &
-\hobbyicon{\color{iconcolour}\faTerminal}{CLI}{cvorange}{\iconsize}{2em} \\
-
-\hobbyicon{\color{iconcolour}\faCompass}{Ski}{cvpurple}{\iconsize}{2em} &
-\hobbyicon{\color{iconcolour}\faCode}{FP}{headerblue}{\iconsize}{2em}
-\end{tabular}
-\end{minipage}
-
-\vspace{4em}
+\hfill
+\vspace{2em}
 
 \begin{minipage}[t]{0.3\textwidth}
-\section*{Certificates \& Prizes}
-\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.55\textwidth}}
-    2013 & Best final math exam \\
-    2019 & Best paper award on ``Boosting Job-Level Migration by Static Analysis``
-\end{tabular}
 \section*{Strenghts}
-\cvtag{honest}
-\cvtag{organized}
-\cvtag{team player}
-\cvtag{former marathoner}
-\cvtag{endurance}
-\cvtag{communication skills}
+\cvtagB{Organized}
+\cvtagB{Team Player}
+\cvtagB{Endurance}
+\cvtagB{Communication Skills}
+\cvtagB{Efficiency}
+\cvtagB{Strategic Thinking}
+\cvtagB{Interested in the Big Picture}
 \end{minipage}\hfill
 \begin{minipage}[t]{0.3\textwidth}
 \section*{Publications}
 \begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.7\textwidth}}
     2019 & \emph{Boosting Job-Level Migration by Static Analysis}, OSPERT '19 part of ECRTS. \\
 \end{tabular}
+\section*{Hobbies}
+% usage \hobbyicon{<fontawesome icon}{Text}{background color of circle}{size of icon}{space text below icon}
+\cvtagG{Running}
+\cvtagG{Command-line Interfaces}
+\cvtagG{Snowboarding}
+\cvtagG{Watches}
+\cvtagG{Functional Programming}
 \end{minipage}
 
 \vfill{} % Whitespace before final footer
+\vspace{2em}
 
 %----------------------------------------------------------------------------------------
 %	FINAL FOOTER
